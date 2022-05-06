@@ -1,1 +1,1 @@
-# csc196w-web-programming
+# CSC196w-web-programming
