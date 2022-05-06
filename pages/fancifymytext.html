@@ -4,7 +4,7 @@
 		<title>Fancify Shamcify</title>
 
 		<!-- link to your script file here -->
-		<script src="scripts/fancifymytext.js"></script>
+		<script src="../scripts/fancifymytext.js"></script>
 		
 		
 	</head>
@@ -15,16 +15,22 @@
 		<!-- Your UI controls go here -->
 		<fieldset>
 			<legend>Text</legend>
-			<textarea id="text" name="text" rows="4" cols="30"></textarea>
+			<textarea id="userText" name="text" rows="4" cols="30"></textarea>
 		</fieldset>
 
 		<fieldset>
 			<legend>Fancify</legend>
-			<button onclick="myFunc()">Bigger!</button>
+			<button onclick="biggerFunc()">Bigger!</button>
+			<button onClick="mooFunc()">Moo</button>
+			
+			<form>
+				<input type="radio" name="group1" id="fancy" value="FancyShmancy" onchange="fancyFunc()">
+				<label for="fancy">FancyShmancy</label>
+				<input type="radio" name="group1" id="boring" value="BoringBetty" onchange="boringFunc()">
+				<label for="BoringBetty">BoringBetty</label>
+			</form>
 			
 
-			<input type="radio" id="fancy">FancyShmancy</input>
-			<input type="radio" id="boring">BoringBetty</input>
 		</fieldset>
 		
 		
